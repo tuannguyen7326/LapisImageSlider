@@ -30,6 +30,7 @@ export interface ILapisImageSliderFocusChangeEventData{
 }
 
 export interface ILapisImageSliderProps {
+    className?: string,
     width?: string,
     height?:string,
     imageFocusStart?: number,
@@ -194,10 +195,24 @@ export default class LapisImageSlider extends React.PureComponent<
             );
         }
 
+        const renderClassName = ():string => {
+            let className:string = 'lapis-image-slider';
+
+            if(this.props.theme){
+                className += ` ${this.props.theme}`;
+            }
+
+            if(this.props.className){
+                className += ` ${this.props.className}`;
+            }
+
+            return className;
+        }
+
         return (
             <div
                 id={this.id}
-                className={`lapis-image-slider ${this.props.theme || ELapisImageSliderTheme.Slider3D}`}
+                className={renderClassName()}
                 onMouseEnter={this.imageSliderHandleMouseEnter}
                 onMouseLeave={this.imageSliderHandleMouseLeave}
             >

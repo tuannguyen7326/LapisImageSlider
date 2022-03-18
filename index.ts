@@ -1,10 +1,10 @@
 import LapisImageSlider, {ELapisImageSliderTheme, ILapisImageSliderFocusChangeEventData} from './LapisImageSlider';
 import Image from './Image';
 
-export type { ILapisImageSliderFocusChangeEventData as IImageSliderFocusChangeEventData }
+export type { ILapisImageSliderFocusChangeEventData }
 
 export {
-    ELapisImageSliderTheme as EImageSliderTheme,
+    ELapisImageSliderTheme,
     Image
 };
 
