@@ -1,0 +1,5 @@
+.lapis-image-slider.slider-3d {
+    --image-slider-nav-height: 50px;
+    --image-slider-image-height: calc(var(--image-slider-height) - var(--image-slider-nav-height));
+    //
+}

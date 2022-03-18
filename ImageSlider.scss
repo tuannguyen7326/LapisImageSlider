@@ -1,0 +1,23 @@
+.lapis-image-slider {
+    //
+    --image-slider-width: 100%; // default value
+    --image-slider-height: 500px; // default value
+    //
+    --image-slider-nav-height: 40px;
+    --image-slider-image-height: calc(var(--image-slider-height) - var(--image-slider-nav-height));
+    //
+    display: block;
+    //
+    width: var(--image-slider-width);
+    height: var(--image-slider-height);
+    //
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.lapis-image-slider * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}

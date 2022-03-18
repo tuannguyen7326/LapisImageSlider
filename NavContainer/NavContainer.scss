@@ -1,0 +1,37 @@
+.lapis-image-slider>.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    //
+    width: 100%;
+    height: var(--image-slider-nav-height);
+    >ol {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >li {
+            $size: 16px;
+            $li-color: rgb(100, 200, 255);
+            //
+            display: block;
+            overflow: hidden;
+            //
+            width: $size;
+            height: $size;
+            //
+            background-color: rgba($li-color, 0.5);
+            //
+            margin: calc($size / 4);
+            border-radius: calc($size / 2);
+            //
+            transition: width 1s, background-color 1.5s;
+            //
+            cursor: pointer;
+            //
+            &.focus {
+                width: calc($size * 2);
+                background-color: rgba($li-color, 1);
+            }
+        }
+    }
+}

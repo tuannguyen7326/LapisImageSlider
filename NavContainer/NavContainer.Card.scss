@@ -1,0 +1,9 @@
+.lapis-image-slider.card>.nav-container {
+    display: none;
+    >ol {
+        display: none;
+        >li {
+            display: none;
+        }
+    }
+}
